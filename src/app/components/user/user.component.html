@@ -1,0 +1,14 @@
+<div class="user" *ngFor="let user of users">
+    <div class="info-wrapper">
+        <img [src]="user.img" alt="avatar de {{user.name}}" />
+        <div class="user-info">
+            <h2 class="user-name">
+                {{user.name}} {{user.id}}
+            </h2>
+            <p class="user-id-username">
+               <span class="user-id-name">{{user.username}}</span>
+            </p>
+        </div>
+    </div>
+    <button type="button" class="pay-button" (click)="payUser(user.id)">Pagar</button>
+</div>

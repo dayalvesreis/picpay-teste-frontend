@@ -1,0 +1,52 @@
+.user {
+    border-bottom: 1px solid #ececec;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #222222;
+
+    img {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        border: 2px solid #60c870;
+    }
+    .info-wrapper {
+        display: flex;
+        align-items: center;
+
+        .user-info {
+            margin-left: 20px;
+
+            .user-name {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            .user-id-username {
+                color: #777;
+                margin: 8px 0 0 0;
+            }
+        }
+    }
+    .pay-button {
+        border: 2px solid #11c76f;
+        background: transparent;
+        padding: 14px;
+        border-radius: 50px;
+        min-width: 170px;
+        color: #11c76f;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: capitalize;
+
+        &:hover {
+            cursor: pointer;
+            border: 2px solid #0d9855;
+            background: #0d9855;
+            color: white;
+        }
+    }
+}

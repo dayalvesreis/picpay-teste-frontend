@@ -1,0 +1,22 @@
+<main>
+  <section class="users">
+    <app-user [users]="users$ | async | slice:1:6" (sendUser)="getUser($event)"></app-user>
+
+    <app-modal *ngIf="modals.payment" [title]="titleModal">
+      <div class="title-modal">Pagamento para <span>Nome do Usuário</span></div>
+      <div class="content-modal">
+        <input type="number" placeholder="R$ 0,00" />
+  
+        <div class="cards">
+            <select>
+                <option selected>Cartão com final 0123</option>
+            </select>
+        </div>
+  
+        <button type="button" class="pay-button">
+            Pagar
+        </button>
+      </div>
+    </app-modal>
+  </section>
+</main>
